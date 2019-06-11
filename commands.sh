@@ -11,6 +11,15 @@ run(){
 }
 
 test(){
-	curl localhost:80/auditlog
+	curl -X POST -H "Content-Type: application/json" -d @./testInput.json http://localhost:80/auditlog
 }
+
+test2(){
+	curl -X POST -H "Content-Type: application/json" -d @./testInput2.json http://localhost:80/auditlog
+}
+
+startMongo(){
+	 mongod --config /usr/local/etc/mongod.conf
+}
+
 $@

@@ -5,5 +5,5 @@ apiKeys:
   - reallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylong
 listenPort: 80
 mongoDb:
-  connectionString: “mongodb://localhost:27017”
+  connectionString: "mongodb://localhost:27017"
   targetCollection: "auditlogs"
