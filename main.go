@@ -61,7 +61,6 @@ func main() {
 		}
 		r := chi.NewRouter()
 		r.Post("/auditlog", func(w http.ResponseWriter, r *http.Request) {
-			log.Println("auditlog")
 			var inpData inputData
 			var b []byte
 			if err := func() error {
