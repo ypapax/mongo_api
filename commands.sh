@@ -22,4 +22,9 @@ startMongo(){
 	 mongod --config /usr/local/etc/mongod.conf
 }
 
+zp(){
+	targetZipFile=/tmp/mongo_api.zip
+	rm $targetZipFile
+	zip -r $targetZipFile . -x .git/**\* .idea/**\* .git/ .idea/
+}
 $@
