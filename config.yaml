@@ -1,0 +1,9 @@
+apiKeys:
+  - a
+  - b
+  - couldBeOneOrMore
+  - reallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylongreallylong
+listenPort: 80
+mongoDb:
+  connectionString: “mongodb://localhost:27017”
+  targetCollection: "auditlogs"
